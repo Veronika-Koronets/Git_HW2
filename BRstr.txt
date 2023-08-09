@@ -1,0 +1,12 @@
+1. Number
+2. Severity
+3. Priority
+4. Title
+5. Environment
+6. Precondition
+7. Steps to reproduce (STR)
+8. Expected result (ER)
+9. Actual result (AR)
+10. Attachment (link to video)
+11. Postcondition (optional)
+
