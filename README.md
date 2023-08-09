@@ -25,68 +25,19 @@ kv@kvPC MINGW64 /d/Git_HW2 (main)
 $ git branch Postman
 
 kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch Jmeter && CheckLists && Bug_Reports && SQL && Charles && Mobile Testing
-bash: CheckLists: command not found
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch Jmeter && git branch CheckLists && git branch Bug_Reports && git branch SQL && git branch Charles && git branch Mobile Testing
-fatal: a branch named 'Jmeter' already exists
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch Jmeter && git branch CheckLists && git branch Bug_Reports && git branch SQL && git branch Charles && git branch Mobile Testing
-fatal: a branch named 'Jmeter' already exists
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch Jmeter && git branch CheckLists && git branch Bug_Reports && git branch SQL && git branch Charles && git branch Mobile Testing
-fatal: a branch named 'Jmeter' already exists
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
 $ git branch Jmeter
-fatal: a branch named 'Jmeter' already exists
+
+kv@kvPC MINGW64 /d/Git_HW2 (main)
+$ git branch CheckLists
+
+kv@kvPC MINGW64 /d/Git_HW2 (main)
+$ git branch Bug_Reports
 
 kv@kvPC MINGW64 /d/Git_HW2 (main)
 $ git branch SQL
 
 kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch
-  Jmeter
-  Postman
-  SQL
-* main
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch CheckLists && git branch Bug_Reports && git branch Charles && git branch Mobile Testing                        fatal: not a valid object name: 'Testing'
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch CheckLists && git branch Bug_Reports && git branch Charles && git branch Mobile_Testing
-fatal: a branch named 'CheckLists' already exists
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch
-  Bug_Reports
-  Charles
-  CheckLists
-  Jmeter
-  Postman
-  SQL
-* main
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch Mobile_tesring
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch -D Mobile_tesring
-Deleted branch Mobile_tesring (was c5a306a).
-
-kv@kvPC MINGW64 /d/Git_HW2 (main)
-$ git branch
-  Bug_Reports
-  Charles
-  CheckLists
-  Jmeter
-  Postman
-  SQL
-* main
+$ git branch Charles
 
 kv@kvPC MINGW64 /d/Git_HW2 (main)
 $ git branch Mobile_testing
@@ -108,8 +59,10 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
+```
 
 ## 2. Push all the branches to the remote repository
+
 ```
 kv@kvPC MINGW64 /d/Git_HW2 (main)
 $ git push origin -all
@@ -127,6 +80,7 @@ To https://github.com/Veronika-Koronets/Git_HW2.git
  * [new branch]      Postman -> Postman
  * [new branch]      SQL -> SQL
 ```
+
 ## 3. In Bug_Reports branch, create a text document with the structure of the bug report
 ```
 kv@kvPC MINGW64 /d/Git_HW2 (main)
@@ -196,7 +150,7 @@ $ git status
 On branch Bug_Reports
 nothing to commit, working tree clean
 
-???(kv@kvPC MINGW64 /d/Git_HW2 (Bug_Reports)
+??? (kv@kvPC MINGW64 /d/Git_HW2 (Bug_Reports)
 $ git push
 fatal: The current branch Bug_Reports has no upstream branch.
 To push the current branch and set the remote as upstream, use
@@ -220,7 +174,7 @@ To https://github.com/Veronika-Koronets/Git_HW2.git
 ```
 
 ## 5. Merge Bug Reports branch into main
-`` 
+```
 kv@kvPC MINGW64 /d/Git_HW2 (Bug_Reports)
 $ git checkout main
 Switched to branch 'main'
@@ -235,7 +189,9 @@ Fast-forward
  create mode 100644 bug_report_str.txt
 ```
 
-## 6. Push main to the remote repository.
+## 6. Push main to the remote repository
+
+```
 kv@kvPC MINGW64 /d/Git_HW2 (main)
 $ git status
 On branch main
@@ -314,6 +270,7 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Veronika-Koronets/Git_HW2.git
    c5a306a..b5bcac5  CheckLists -> CheckLists
 ```
+
 ## 9. In the remote repository, do a pull request of Checklists branch into main
 ## 10. Synchronize remote and local main branches
 
